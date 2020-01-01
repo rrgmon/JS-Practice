@@ -1,0 +1,159 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow: auto;
+}
+
+.container {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+}
+
+/* ******************** Button ******************** */
+
+.btn {
+  border: none;
+  text-decoration: none;
+  background: rgb(70, 180, 248);
+  color: white;
+  font-size: 1em;
+  align-self: center;
+  padding: 10px 15px;
+  margin-top: 1em;
+}
+
+.btn:hover {
+  background: #2183f2;
+}
+
+/* ******************** Heading ******************** */
+
+.heading {
+  /* background: lightskyblue; */
+  background: rgb(70, 180, 248);
+  position: relative;
+  padding: 2em;
+  font-size: 20px;
+  border-bottom: 2px double rgb(70, 180, 248);
+}
+
+.heading h1 {
+  /* background: lightblue; */
+  text-align: center;
+  color: white;
+}
+
+.home-btn {
+  /* position: absolute; */
+  border: none;
+  padding: 8px 10px;
+  background: none;
+  font-size: 16px;
+  border: 1px solid white;
+  color: white;
+}
+
+.home-btn:hover {
+  background: #2183f2;
+}
+
+/* ******************** Content ******************** */
+
+.content {
+  display: flex;
+}
+
+/* ******************** Side Bar ******************** */
+
+.sidebar {
+  background: rgb(70, 180, 248);
+  padding: 1em;
+  margin: 1em;
+  width: 10%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* .sidebar:hover {
+  background: #2183f2;
+} */
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  font-size: 16px;
+  text-align: center;
+  padding: 12px 0;
+  margin-bottom: 12px;
+}
+
+.sidebar li a {
+  text-decoration: none;
+  color: white;
+}
+
+.sidebar li a:hover {
+  color: black;
+}
+
+/* ******************** JS Part ******************** */
+
+.jspart {
+  /* background-color: lightgoldenrodyellow; */
+  flex-grow: 2;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 1em;
+  width: 80%;
+  overflow: auto;
+}
+
+.jspart h1 {
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 0.2em;
+  margin: 0 1em;
+  border-bottom: 1px solid black;
+}
+
+.jspart p {
+  font-size: 14px;
+  color: gray;
+  padding-top: 1em;
+}
+
+/* ******************** JS Content ******************** */
+
+.box {
+  background: white;
+  padding: 1em;
+  margin: 1em;
+  width: inherit;
+  height: 10em;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  box-shadow: 1px 1px 20px -8px rgb(161, 161, 161);
+}
+
+.box:hover {
+  box-shadow: 1px 1px 20px -2px rgb(161, 161, 161);
+}
+
+:target {
+  box-shadow: 1px 1px 20px -2px rgb(70, 180, 248);
+}

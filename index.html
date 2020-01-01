@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Javascript Dojo</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="heading">
+        <button id="undo" class="home-btn" onclick="undo()">Undo</button>
+        <h1>Javascript Dojo</h1>
+      </header>
+
+      <section class="content">
+        <div class="sidebar">
+          <ul>
+            <li>
+              <a id="link-txtchange" href="#js1">Change Text</a>
+            </li>
+            <li>
+              <a id="link-disappear" href="#js2">Disappear Element</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="jspart">
+          <div id="js1" class="change-text box">
+            <h1>Changing the text</h1>
+            <p id="textchange">This is the original text.</p>
+            <button class="btn" onclick="changeText()">
+              Click Here
+            </button>
+          </div>
+
+          <div id="js2" class="disappear-txt box">
+            <h1>Hiding the text</h1>
+            <p id="disappear">This text will disappear.</p>
+            <button class="btn" onclick="disappearElement()">
+              Click Here
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="highlight-jquery.js"></script>
+  </body>
+</html>
