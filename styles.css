@@ -6,10 +6,10 @@
   padding: 0;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap");
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   overflow: auto;
 }
 
@@ -61,10 +61,12 @@ body {
   font-size: 16px;
   border: 1px solid white;
   color: white;
+  cursor: pointer;
 }
 
 .home-btn:hover {
-  background: #2183f2;
+  background: white;
+  color: #2183f2;
 }
 
 /* ******************** Content ******************** */
@@ -140,9 +142,6 @@ body {
   background: white;
   padding: 1em;
   margin: 1em;
-  width: inherit;
-  height: 10em;
-
   display: flex;
   flex-direction: column;
   text-align: center;
