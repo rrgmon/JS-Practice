@@ -1,4 +1,4 @@
-# JS-Practice
+# Javascript Practice
 
 **A website to practice some Javascript exercises**
 
