@@ -1,20 +1,9 @@
-// Undo Changes
-
-function undo() {
-  var undoChange = document.getElementById("undo");
-  undoChange = window.location.reload();
+/* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById('mySidenav').style.width = '250px';
 }
 
-//Changing the text in HTML
-
-function changeText() {
-  var txtChange = document.getElementById("textchange");
-  txtChange.innerHTML = "This is the changed text.";
-}
-
-// Hiding an elementin HTML
-
-function disappearElement() {
-  var disElement = document.getElementById("disappear");
-  disElement.style.display = "none";
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById('mySidenav').style.width = '0';
 }

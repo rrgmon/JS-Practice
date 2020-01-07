@@ -4,12 +4,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap');
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background: #111;
 }
 
 .container {
@@ -38,20 +40,32 @@ body {
 /* ******************** Heading ******************** */
 
 .heading {
-  background: rgb(70, 180, 248);
-  padding: 2em;
+  display: flex;
+  align-items: center;
+  padding: 1em;
   font-size: 20px;
-  /* border-bottom: 2px double rgb(70, 180, 248); */
+  border-bottom: 2px double rgb(70, 180, 248);
 }
 
 .heading h1 {
-  /* background: lightblue; */
+  flex-grow: 2;
   text-align: center;
   color: white;
 }
 
+.menu {
+  flex-grow: 0;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+}
+
+.menu:hover {
+  color: rgb(70, 180, 248);
+}
+
 .home-btn {
-  /* position: absolute; */
+  flex-grow: 0;
   border: none;
   padding: 8px 10px;
   background: none;
@@ -62,98 +76,115 @@ body {
 }
 
 .home-btn:hover {
-  background: white;
-  color: #2183f2;
-}
-
-/* ******************** Content ******************** */
-
-.content {
-  display: flex;
+  background: rgb(70, 180, 248);
+  color: white;
+  border: 1px solid rgb(70, 180, 248);
 }
 
 /* ******************** Side Bar ******************** */
-
-.sidebar {
-  background: rgb(70, 180, 248);
-  flex-grow: 1;
-  padding: 1em;
-  margin: 1em;
-  width: 10%;
-  height: 70vh;
-  overflow: auto;
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
 }
 
-/* .sidebar:hover {
-  background: #2183f2;
-} */
-
-.sidebar ul {
-  list-style: none;
-}
-
-.sidebar li {
-  font-size: 16px;
-  text-align: center;
-  padding: 12px 0;
-  margin-bottom: 12px;
-}
-
-.sidebar li a {
+.sidenav a {
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
-  color: white;
+  text-align: justify;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
 
-.sidebar li a:hover {
-  color: black;
+.sidenav a:hover {
+  color: rgb(70, 180, 248);
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
 /* ******************** JS Part ******************** */
 
 .jspart {
-  background-color: lightgoldenrodyellow;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
   gap: 1em;
   margin: 1em;
   overflow: auto;
-  width: 90%;
-  min-height: 70vh;
-  height: 70vh;
+  min-height: 80vh;
+  height: 80vh;
 }
 
 .jspart h1 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
-  padding-bottom: 0.2em;
+  padding-bottom: 1em;
   margin: 0 1em;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(73, 72, 72);
+  color: white;
 }
 
 .jspart p {
   font-size: 14px;
-  color: gray;
+  color: white;
   padding-top: 1em;
 }
 
 /* ******************** JS Content ******************** */
 
 .box {
-  background: white;
+  background: rgb(27, 27, 27);
   padding: 1em;
+  margin: 1em;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   text-align: center;
-  width: 300px;
-  height: 200px;
-  box-shadow: 1px 1px 20px -8px rgb(161, 161, 161);
+  min-width: 300px;
+  max-height: 300px;
 }
 
 .box:hover {
-  box-shadow: 1px 1px 20px -2px rgb(161, 161, 161);
+  box-shadow: 1px 1px 20px -2px rgb(66, 65, 65);
 }
 
 :target {
-  box-shadow: 1px 1px 20px -2px rgb(70, 180, 248);
+  box-shadow: 1px 1px 20px -2px rgb(66, 65, 65);
+}
+
+@media (max-width: 1500px) {
+  .jspart {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .content {
+    justify-content: center;
+  }
+
+  .heading h1 {
+    font-size: 30px;
+  }
+
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }

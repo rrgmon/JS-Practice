@@ -10,13 +10,19 @@
   <body>
     <div class="container">
       <header class="heading">
-        <button id="undo" class="home-btn" onclick="undo()">Undo</button>
+        <span onclick="openNav()" class="menu">Menu</span>
         <h1>Javascript Dojo</h1>
+        <button id="undo" class="home-btn" onclick="undo()">Undo</button>
       </header>
 
       <section class="content">
-        <div class="sidebar">
+        <div id="mySidenav" class="sidenav">
           <ul>
+            <li>
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                >&times;</a
+              >
+            </li>
             <li>
               <a id="link-txtchange" href="#js1">Change Text</a>
             </li>
@@ -42,156 +48,13 @@
               Click Here
             </button>
           </div>
-
-          <div id="js2" class="disappear-txt box">
-            <h1>Hiding the text</h1>
-            <p id="disappear">This text will disappear.</p>
-            <button class="btn" onclick="disappearElement()">
-              Click Here
-            </button>
-          </div>
-
-          <div id="js2" class="disappear-txt box">
-            <h1>Hiding the text</h1>
-            <p id="disappear">This text will disappear.</p>
-            <button class="btn" onclick="disappearElement()">
-              Click Here
-            </button>
-          </div>
-
-          <div id="js2" class="disappear-txt box">
-            <h1>Hiding the text</h1>
-            <p id="disappear">This text will disappear.</p>
-            <button class="btn" onclick="disappearElement()">
-              Click Here
-            </button>
-          </div>
-
-          <div id="js2" class="disappear-txt box">
-            <h1>Hiding the text</h1>
-            <p id="disappear">This text will disappear.</p>
-            <button class="btn" onclick="disappearElement()">
-              Click Here
-            </button>
-          </div>
-
-          <div id="js2" class="disappear-txt box">
-            <h1>Hiding the text</h1>
-            <p id="disappear">This text will disappear.</p>
-            <button class="btn" onclick="disappearElement()">
-              Click Here
-            </button>
-          </div>
-
-          <div id="js2" class="disappear-txt box">
-            <h1>Hiding the text</h1>
-            <p id="disappear">This text will disappear.</p>
-            <button class="btn" onclick="disappearElement()">
-              Click Here
-            </button>
-          </div>
-
-          <div id="js2" class="disappear-txt box">
-            <h1>Hiding the text</h1>
-            <p id="disappear">This text will disappear.</p>
-            <button class="btn" onclick="disappearElement()">
-              Click Here
-            </button>
-          </div>
-
-          <div id="js2" class="disappear-txt box">
-            <h1>Hiding the text</h1>
-            <p id="disappear">This text will disappear.</p>
-            <button class="btn" onclick="disappearElement()">
-              Click Here
-            </button>
-          </div>
-
-          <div id="js2" class="disappear-txt box">
-            <h1>Hiding the text</h1>
-            <p id="disappear">This text will disappear.</p>
-            <button class="btn" onclick="disappearElement()">
-              Click Here
-            </button>
-          </div>
-
-          <div id="js2" class="disappear-txt box">
-            <h1>Hiding the text</h1>
-            <p id="disappear">This text will disappear.</p>
-            <button class="btn" onclick="disappearElement()">
-              Click Here
-            </button>
-          </div>
-
-          <div id="js2" class="disappear-txt box">
-            <h1>Hiding the text</h1>
-            <p id="disappear">This text will disappear.</p>
-            <button class="btn" onclick="disappearElement()">
-              Click Here
-            </button>
-          </div>
-
-          <div id="js2" class="disappear-txt box">
-            <h1>Hiding the text</h1>
-            <p id="disappear">This text will disappear.</p>
-            <button class="btn" onclick="disappearElement()">
-              Click Here
-            </button>
-          </div>
-
-          <div id="js2" class="disappear-txt box">
-            <h1>Hiding the text</h1>
-            <p id="disappear">This text will disappear.</p>
-            <button class="btn" onclick="disappearElement()">
-              Click Here
-            </button>
-          </div>
-
-          <div id="js2" class="disappear-txt box">
-            <h1>Hiding the text</h1>
-            <p id="disappear">This text will disappear.</p>
-            <button class="btn" onclick="disappearElement()">
-              Click Here
-            </button>
-          </div>
-
-          <div id="js2" class="disappear-txt box">
-            <h1>Hiding the text</h1>
-            <p id="disappear">This text will disappear.</p>
-            <button class="btn" onclick="disappearElement()">
-              Click Here
-            </button>
-          </div>
-
-          <div id="js2" class="disappear-txt box">
-            <h1>Hiding the text</h1>
-            <p id="disappear">This text will disappear.</p>
-            <button class="btn" onclick="disappearElement()">
-              Click Here
-            </button>
-          </div>
-
-          <div id="js2" class="disappear-txt box">
-            <h1>Hiding the text</h1>
-            <p id="disappear">This text will disappear.</p>
-            <button class="btn" onclick="disappearElement()">
-              Click Here
-            </button>
-          </div>
-
-          <div id="js2" class="disappear-txt box">
-            <h1>Hiding the text</h1>
-            <p id="disappear">This text will disappear.</p>
-            <button class="btn" onclick="disappearElement()">
-              Click Here
-            </button>
-          </div>
         </div>
       </section>
     </div>
 
     <!-- Scripts -->
     <script src="script.js"></script>
+    <script src="exercises.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
