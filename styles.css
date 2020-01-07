@@ -10,7 +10,6 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  overflow: auto;
 }
 
 .container {
@@ -39,12 +38,10 @@ body {
 /* ******************** Heading ******************** */
 
 .heading {
-  /* background: lightskyblue; */
   background: rgb(70, 180, 248);
-  position: relative;
   padding: 2em;
   font-size: 20px;
-  border-bottom: 2px double rgb(70, 180, 248);
+  /* border-bottom: 2px double rgb(70, 180, 248); */
 }
 
 .heading h1 {
@@ -79,11 +76,12 @@ body {
 
 .sidebar {
   background: rgb(70, 180, 248);
+  flex-grow: 1;
   padding: 1em;
   margin: 1em;
   width: 10%;
-  height: 100%;
-  overflow: hidden;
+  height: 70vh;
+  overflow: auto;
 }
 
 /* .sidebar:hover {
@@ -113,13 +111,16 @@ body {
 /* ******************** JS Part ******************** */
 
 .jspart {
-  /* background-color: lightgoldenrodyellow; */
-  flex-grow: 2;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  background-color: lightgoldenrodyellow;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
   margin: 1em;
-  width: 80%;
   overflow: auto;
+  width: 90%;
+  min-height: 70vh;
+  height: 70vh;
 }
 
 .jspart h1 {
@@ -141,11 +142,11 @@ body {
 .box {
   background: white;
   padding: 1em;
-  margin: 1em;
   display: flex;
   flex-direction: column;
   text-align: center;
-
+  width: 300px;
+  height: 200px;
   box-shadow: 1px 1px 20px -8px rgb(161, 161, 161);
 }
 
